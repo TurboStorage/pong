@@ -1,0 +1,11 @@
+:root { color-scheme: dark; font-family: "Courier New", monospace; background: #071015; color: #e8eee9; }
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; display: grid; place-items: center; background: radial-gradient(circle at 50% 10%, #183945 0, #071015 58%); }
+.game-shell { width: min(100%, 1050px); padding: 1.5rem; text-align: center; }
+header { display: flex; justify-content: space-between; gap: 1rem; margin: 0 auto .85rem; width: min(100%, 960px); color: #73dfd6; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; }
+.brand { color: inherit; font-weight: 700; text-decoration: none; }
+header p { margin: 0; }
+canvas { display: block; width: 100%; height: auto; border: 1px solid #39606a; background: #071015; box-shadow: 12px 12px 0 #0b242c; touch-action: none; }
+.instructions { margin: 1.2rem 0 0; color: #bdd2ce; font-size: clamp(.7rem, 2vw, .85rem); line-height: 1.7; }
+.instructions b { color: #73dfd6; }
+@media (max-width: 540px) { .game-shell { padding: 1rem; } header { display: block; line-height: 1.8; } }
